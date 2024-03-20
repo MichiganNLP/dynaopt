@@ -1,0 +1,12 @@
+__pycache__
+
+models/
+data/
+wandb/
+*.log
+*.bin
+outputs/
+zoutputs/
+*outputs/
+sunk/
+*png
