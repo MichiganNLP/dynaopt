@@ -6,13 +6,13 @@ Code for ``Dynamic Reward Adjustment in Multi-Reward Reinforcement Learning for 
 ### 1. Prerequisites
 
 Clone the repository:
-```
+```bash
 git clone https://github.com/mindojune/dynaopt.git
 cd dynaopt
 ```
 
 Next, create a new environment and install the required packages:
-```
+```bash
 conda create -n dynaopt python=3.9
 conda activate bolt
 pip install -r requirements
@@ -27,12 +27,12 @@ Put the weight inside `dynaopt/weights`.
 
 First, train the warm-start model in a supervised manner.
 
-```
+```bash
 python supervised_train.py --experiment MI --num_epochs 5
 ```
 
 Save the path of your trained model and run the inference step over test data.
-```
+```bash
 start_dir={your supervised model}
 python test_util.py --experiment MI_rl --model_start_dir $start_dir
 ```
@@ -47,7 +47,7 @@ Refer to the following table to train differnet models.
 | DynaOpt (Ours)  | rl_train.py / bandit_weighted  |
 |  C-Dynaopt (Ours) | con_rl_train.py  / None  |
 
-```
+```bash
 python rl_train.py --learning_mode bandit_weighted --seed $i --experiment MI_rl --model_start_dir $start_dir
 python con_rl_train.py --seed $i  --experiment MI_rl --model_start_dir $start_dir
 python rl_train.py --learning_mode weighted --seed $i --experiment MI_rl --model_start_dir $start_dir
@@ -56,7 +56,7 @@ python rl_train.py --learning_mode bandit --seed $i  --experiment MI_rl --model_
 ```
 
 And compute the statistics on the test data.
-```
+```bash
 python compute_stats.py --dir ./outputs
 ```
 
@@ -67,7 +67,7 @@ Our project is licensed under the Apache License 2.0, ensuring open access and c
 
 ### This code makes use of the [Keep it Simple code by Laban et al.](https://github.com/tingofurro/keep_it_simple/)
 Specifically, we use the code for the k self-critical sequence training algorithm..
-```
+```bibtex
 @inproceedings{laban2021keep_it_simple,
   title={Keep It Simple: Unsupervised Simplification of Multi-Paragraph Text},
   author={Philippe Laban and Tobias Schnabel and Paul N. Bennett and Marti A. Hearst},
@@ -81,7 +81,7 @@ Specifically, we use the code for the k self-critical sequence training algorith
 ### Cite the work
 
 If you make use of the code, models, or algorithm, please cite our paper:
-```
+```bibtex
 @inproceedings{laban2021keep_it_simple,
   title={Dynamic Reward Adjustment in Multi-Reward Reinforcement Learning for Counselor Reflection Generation},
     author = "Min, Do June  and
