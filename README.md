@@ -1,6 +1,6 @@
 # DynaOpt: Dynamic Reward Adjustment in Multi-Reward Reinforcement Learning for Counselor Reflection Generation
 
-Code for ``Dynamic Reward Adjustment in Multi-Reward Reinforcement Learning for Counselor Reflection Generation``
+Code for [``Dynamic Reward Adjustment in Multi-Reward Reinforcement Learning for Counselor Reflection Generation``](https://arxiv.org/abs/2403.13578)
 
 ## Quickstart
 ### 1. Prerequisites
