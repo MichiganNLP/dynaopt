@@ -82,7 +82,7 @@ Specifically, we use the code for the k self-critical sequence training algorith
 
 If you make use of the code, models, or algorithm, please cite our paper:
 ```bibtex
-@inproceedings{laban2021keep_it_simple,
+@inproceedings{min-etal-2024-bandit,
   title={Dynamic Reward Adjustment in Multi-Reward Reinforcement Learning for Counselor Reflection Generation},
     author = "Min, Do June  and
     P{\'e}rez-Rosas, Ver{\'o}nica  and
